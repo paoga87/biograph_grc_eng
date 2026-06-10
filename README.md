@@ -24,3 +24,5 @@ The job has two consumers: humans who need to act, and the compliance platform t
 - **Audit evidence:** the full structured JSON report is written to a dedicated evidence GCS bucket with object versioning and a retention policy, giving an immutable, timestamped trail for auditors.
 - **Alerting:** non-compliant findings are published to a Pub/Sub topic. A lightweight subscriber (Cloud Function) fans them out to Slack / PagerDuty for the Security/Engineering team and creates Security Command Center custom findings so violations surface in GCP's central posture dashboard.
 - **Continuous compliance tooling:** the job POSTs per-control pass/fail results to Vanta/Drata via their custom-test API, so the HIPAA bucket control appears in the compliance dashboard with current status and evidence. (Their native GCP integrations cover generic posture; the API push is for this organization-specific control.)
+
+**Disclaimer:** My hands-on experience is primarily with AWS. For these responses, I used Claude to cross-reference and compare equivalent AWS and GCP services to ensure the recommendations accurately reflect the GCP-based environment used by Biograph.
