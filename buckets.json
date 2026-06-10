@@ -1,0 +1,20 @@
+[
+  {
+    "name": "bio-public-assets",
+    "labels": { "ephi": "false", "env": "prod" },
+    "publicAccessPrevention": "inherited",
+    "encryption": null
+  },
+  {
+    "name": "bio-clinical-data-prod",
+    "labels": { "ephi": "true", "env": "prod" },
+    "publicAccessPrevention": "enforced",
+    "encryption": { "defaultKmsKeyName": "projects/bio-prod/locations/us/keyRings/ring-1/cryptoKeys/key-1" }
+  },
+  {
+    "name": "bio-patient-intake-dev",
+    "labels": { "ephi": "true", "env": "dev" },
+    "publicAccessPrevention": "inherited",
+    "encryption": null
+  }
+]
