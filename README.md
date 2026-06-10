@@ -1,5 +1,5 @@
 # HIPAA GCS Bucket Compliance Monitor
-Part I covers A small automation that evaluates Google Cloud Storage bucket metadata against HIPAA controls that apply to any bucket containing ePHI. Part II covers the architecture design for this to run in production, including the collection of evidence, alerting and continuous compliance and monitoring.
+Part I covers a small automation that evaluates Google Cloud Storage bucket metadata against HIPAA controls that apply to any bucket containing ePHI. Part II covers the architecture design for this to run in production, including the collection of evidence, alerting and continuous compliance and monitoring.
 
 ## Part I
 ### Running the script
